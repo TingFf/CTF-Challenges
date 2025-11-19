@@ -37,22 +37,22 @@ mystery
 6. Each chunk has the following 4 parts:  
 
 **Field	Size (bytes)	Description(All chunk follows this structure)**  
-*Length*	4	Length of the Data field (not including header or CRC)  
-*Type*	4	Chunk type (ASCII letters, e.g. IHDR, IDAT)  
-*Data*	Variable	The actual chunk data  
-*CRC*	4	CRC-32 checksum of the Type and Data fields  
+- *Length*	4	Length of the Data field (not including header or CRC)  
+- *Type*	4	Chunk type (ASCII letters, e.g. IHDR, IDAT)  
+- *Data*	Variable	The actual chunk data  
+- *CRC*	4	CRC-32 checksum of the Type and Data fields  
 
 **Chunk Type	Description**  
-*IHDR*	Image header (must be first)  
-*PLTE*	Palette (for indexed-color images)  
-*IDAT*	Image data (can be multiple)  
-*IEND*	Marks end of PNG file (must be last)  
-*tEXt*	Textual metadata (optional)  
-*zTXt*	Compressed text  
-*iTXt*	International text  
-*tIME*	Timestamp (last modified)  
-*gAMA*	Gamma correction  
-*bKGD*	Background color  
+- *IHDR*	Image header (must be first)  
+- *PLTE*	Palette (for indexed-color images)  
+- *IDAT*	Image data (can be multiple)  
+- *IEND*	Marks end of PNG file (must be last)  
+- *tEXt*	Textual metadata (optional)  
+- *zTXt*	Compressed text  
+- *iTXt*	International text  
+- *tIME*	Timestamp (last modified)  
+- *gAMA*	Gamma correction  
+- *bKGD*	Background color  
 
 7. After the png header, the next chunck must be IHDR but its missing.  
 ```
