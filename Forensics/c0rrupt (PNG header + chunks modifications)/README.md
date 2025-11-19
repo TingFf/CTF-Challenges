@@ -36,7 +36,7 @@ mystery
 5. In png, the data is stored in chuncks.  
 6. Each chunk has the following 4 parts:  
 
-**Field	Size (bytes)	Description(All chunk follows this structure**  
+**Field	Size (bytes)	Description(All chunk follows this structure)**  
 *Length*	4	Length of the Data field (not including header or CRC)  
 *Type*	4	Chunk type (ASCII letters, e.g. IHDR, IDAT)  
 *Data*	Variable	The actual chunk data  
